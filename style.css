@@ -1,0 +1,182 @@
+body{
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    background-color:#2c3e50;
+    color: white;
+    display: flex;
+    align-items: center; /* vertically centers items */
+    justify-content: space-between; /* spaces items evenly */
+    padding: 10px 20px;
+}
+.search-box {
+    border: 5px solid white;
+    padding: 3px 5px;
+}
+.cart-icon {
+    cursor: pointer;
+}
+h1 {
+    font-size: 25px;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(65, 38, 185);
+    padding-left: 40px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.category-links {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+.category-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.category-links ul li {
+    margin-bottom: 12px;
+}
+.category-links ul li a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    transition: color 0.3s ease;
+
+}
+.category-links ul li a:hover {
+    color: #2980b9;
+}
+.main-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.main-links li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.main-links li a:hover {
+    text-decoration: underline;
+}
+.shoe-image {
+  width: 200px;       
+  height: auto;      
+  object-fit: contain; 
+  display: block;     
+}
+.product-listing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    gap: 20px;
+    padding: 20px;
+}
+.product-card{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+.click-here {
+     display: block;
+     margin-top: 8px;
+}
+.add-to-cart {
+    background-color: rgb(183, 28, 28);
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 6px 10px;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .product-listing {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 10px;
+    gap: 8px;
+  }
+
+  .category-links {
+    width: 100%;
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .shoe-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .add-to-cart {
+    font-size: 14px;
+    padding: 6px 8px;
+    width: 100%;
+  }
+
+  .cart-icon {
+    align-self: flex-end;
+  }
+}

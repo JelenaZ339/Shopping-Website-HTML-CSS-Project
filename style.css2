@@ -1,0 +1,63 @@
+.site-header {
+background-color: #2c3e50;
+color: white;
+display: flex;
+align-items: center; /* vertically centers items */
+justify-content: space-between; /* spaces items evenly */
+padding: 10px 20px;
+}
+
+.header-top {
+display: flex;
+padding: 10px 20px;
+justify-content: space-between;
+align-items: center;
+}
+
+.header-right {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.search-box {
+
+border-radius: 4px;
+border: 1px solid #ccc;
+}
+
+.cart-icon {
+font-size: 20px;
+cursor: pointer;
+}
+.nav-links {
+display: flex;
+gap: 20px;
+list-style: none;
+padding: 0;
+}
+
+.nav-links li a {
+color: white;
+text-decoration: none;
+font-weight: 600;
+font-size: 18px;
+text-align: center;
+}
+.nav-links li a:hover {
+text-decoration: underline;
+}
+
+nav{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@media
+ (max-width: 768px) {
+.product-listing {
+grid-template-columns: repeat(1, 1fr);
+}
+} /*This media query is used to make a webpage responsive on smaller screens, like tablets and mobile devices.*/
+</style>
